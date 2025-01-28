@@ -15,34 +15,13 @@
     <title>Legal Solution</title>
 </head>
 
-<body class="container mx-auto p-4 md:p-10">
-    <header class="space-y-5">
+<body class="container mx-auto">
+    <header class="space-y-5  p-4 md:p-10">
         <!-- navbar -->
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start ">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
-                        </ul>
-                    </div>
-                    <a class="text-xl"><img src="images/logo2.png" alt=""></a>
+                    <a class=""><img class="w-3/4" src="images/logo2.png" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -86,8 +65,18 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+                    <a class="btn bg-[#B68C5A] text-white hidden md:flex">Free Consultation</a>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class=" btn-ghost md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </nav>
         <!-- Banner section -->
@@ -109,7 +98,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main class="mx-auto p-4 md:p-10">
         <!-- Legal Practice Area -->
         <section class="my-10 space-y-4">
             <h2 class="text-4xl font-extrabold text-center">The Legal Practice Area</h2>
@@ -388,8 +377,43 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer bg-[#111111] text-base-content p-4 md:px-10 text-white md:py-16 md:gap-8">
+        <nav class="md:max-w-sm">
+          <img src="images/logo2.png" alt="">
+          <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias facere totam reiciendis nemo dicta molestiae, mollitia dolorum vero adipisci.</p>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Useful Link</h6>
+          <a class="link link-hover">Homes</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Cases</a>
+          <a class="link link-hover">Blog</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Contact Now</h6>
+          <a class="link link-hover">555 4th 5t NW, Washington <br>
+            DC 20530, United States</a>
+          <a class="link link-hover">+88 01750 000 000 <br>
+            +88 01750 000 000</a>
+          <a class="link link-hover">info@gmail.com <br> 
+            info@gmail.com</a>
+        </nav>
+        <form class="">
+          <h6 class="footer-title">Subscribe</h6>
+          <fieldset class="form-control">
+            <label class="label md:w-auto">
+              <span class="label-text text-white w-[100%]">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</span>
+            </label>
+            <div class="join relative w-[96%]">
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="input text-black" />
+              <button class="btn bg-[#B68C5A] rounded-lg absolute -right-3  text-white">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
     </footer>
 </body>
 
